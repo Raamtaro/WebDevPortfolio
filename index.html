@@ -204,7 +204,12 @@
           <!-- Project Item 1 -->
           <li class="projects-list-item">
             <h3 class="project-title">This Portfolio</h3>
-            <p class="project-description">This is a frontend projects aimed at presenting my projects...</p>
+            <p class="project-description">
+              This portfolio is a showcase of projects that I've been working on. 
+              I chose to build this using vanilla javasascript, html and css instead of React as my goal at the time of writing this is to integrate some cool effects from Three JS into this. 
+              While the React and R3F combo is INCREDIBLY convenient, I find the Vanilla stack to be a more customizable.
+              Some challenges to this project have been...
+            </p>
             <ul class="tech-stack">
               <li>                
                   <img src="" alt="HTML icon">
@@ -231,7 +236,14 @@
           <!-- Project Item 2 -->
           <li class="projects-list-item">
             <h3 class="project-title">Messenger</h3>
-            <p class="project-description">This is a full stack messenger app with real-time communication...</p>
+            <p class="project-description">
+              This app is the classic messenger app with real-time communication via Websockets.
+              I chose to go with React and Express for this one. The trifecta of Express, pSQL and Prisma is efficient and makes for very easy-to-read code.
+              Some challenges which I ran into during this project were the relationships between my models, particularly between conversations and users.
+              On one hands, a conversation should only be initiated by one user. On the other hand, a good conversational app should allow for any number of participants.
+              In this instance, there had to be two different relationships set up in the Prisma schema to allow for a 1:Many authoring relationship, as well as a Many:Many conversation to user relationship.
+              ... Expand upon this more as things come up
+            </p>
 
             <ul class="tech-stack">
               <li>               
@@ -252,7 +264,16 @@
           <!-- Project Item 3 -->
           <li class="projects-list-item">
             <h3 class="project-title">Photo Exhibit App</h3>
-            <p class="project-description">This is a full stack app built with React/Express...</p>
+            <p class="project-description">
+              The idea behind this project was inspired by a three JS demo that I found on codrops **insert link here**. 
+              I wanted to practice with REST API server structuring, as well as Three JS. 
+              The goal was to give each user a space to organize separate collections of their photos and lay them out in a view. 
+              From here, some shader and three js 'magic' would kick in and allow them to apply some special effects to their exhibit to give it more of an interactive feel.
+              This project has been incredibly challenging! 
+              The server-side aspect of this was very quick, and simple.
+              On the other hand, the shader programming and layout setup was incredibly difficult, especially when considering React's rendering hierarchy.
+
+            </p>
             <ul class="tech-stack">              
               <li>                
                   <img src="" alt="React icon">
@@ -277,7 +298,12 @@
           <!-- Project Item 4 -->
           <li class="projects-list-item">
             <h3 class="project-title">Blog API</h3>
-            <p class="project-description">This is a full stack blog app...</p>
+            <p class="project-description">
+              This was the first full-stack app that I ever made. 
+              This is your classic User, Post and Comment schema setup. 
+              I loved building this project as it allowed me a way to really demystify all of the 'cool' stuff about any modern website: authentication, authorization, user data storage, and, most importantly, RESTful API structure.
+              Some challenges that I faced while building this were...
+            </p>
             <ul class="tech-stack">
               <li>               
                   <img src="" alt="React icon">
