@@ -51,6 +51,8 @@ h4 {
   font-weight: 100;
 }
 
+
+
 .home {
   max-width: 1280px;
   margin: 0 auto;
@@ -58,3 +60,7 @@ h4 {
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+  text-indent: 0;
+}
