@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="logo" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/index.js" defer></script>
     <title>Vite App</title>
@@ -56,22 +56,22 @@
           <li>
             <span class="company">Intercom</span>
             <span class="title">Customer Support Engineer</span>
-            <img class="company-logo" src="" alt="Intercom Logo">
+            <img class="company-logo" src="" alt="Intercom technology Logo">
           </li>
           <li>
             <span class="company">Intelsat</span>
             <span class="title">Satellite Engineer</span>
-            <img class="company-logo" src="" alt="Intelsat logo">
+            <img class="company-logo" src="" alt="Intelsat-Logo">
           </li>
           <li><span class="company">Aerotek, NASA GSFC</span>
             <span class="title">Integration and Test Engineer</span>
-            <img class="company-logo" src="" alt="Aerotek Logo">
-            <img class="company-logo" src="" alt="NASA Logo">
+            <img class="company-logo" src="" alt="Aerotek-Logo">
+            <img class="company-logo" src="" alt="NASA-Logo">
           </li>
           <li>
             <span class="company">Eutelsat Oneweb, fka Oneweb</span>
             <span class="title">SOP Engineer, Controller</span>
-            <img class="company-logo" src="" alt="OneWeb Logo">
+            <img class="company-logo" src="" alt="OneWeb-Logo">
           </li>
 
         </ul>
@@ -90,15 +90,15 @@
             <h4>Languages</h4>
             <ul>
               <li>
-                <img src="" alt="HTML5 logo" class="tech-item">
+                <img src="" alt="HTML5 technology logo" class="tech-item" aria-label="HTML5">
                 <span>HTML5</span>
               </li>
               <li>
-                <img src="" alt="CSS3 logo" class="tech-item">
+                <img src="" alt="CSS3 technology logo" class="tech-item" aria-label="CSS3">
                 <span>CSS3</span>
               </li>
               <li>
-                <img src="" alt="JavaScript logo" class="tech-item">
+                <img src="" alt="JavaScript technology logo" class="tech-item" aria-label="JS">
                 <span>JavaScript</span>
               </li>
             </ul>
@@ -107,7 +107,7 @@
             <h4>Frameworks</h4>
             <ul>
               <li>
-                <img src="" alt="React logo" class="tech-item">
+                <img src="" alt="React technology logo" class="tech-item" aria-label="React">
                 <span>React</span>
               </li>
             </ul>
@@ -115,17 +115,17 @@
         </section>
       
         <!-- Backend Skills -->
-        <section class="skills-group backend" class="tech-item">
+        <section class="skills-group backend">
           <h3>Backend</h3>
           <div class="languages">
             <h4>Languages</h4>
             <ul>
               <li>
-                <img src="" alt="Node.js logo" class="tech-item">
+                <img src="" alt="Node.js technology logo" class="tech-item" aria-label="Node.js">
                 <span>Node.js</span>
               </li>
               <li>
-                <img src="" alt="Python logo" class="tech-item">
+                <img src="" alt="Python technology logo" class="tech-item" aria-label="Python">
                 <span>Python</span>
               </li>
             </ul>
@@ -134,11 +134,11 @@
             <h4>Frameworks</h4>
             <ul>
               <li>
-                <img src="" alt="Express logo" class="tech-item">
+                <img src="" alt="Express technology logo" class="tech-item" aria-label="Express">
                 <span>Express</span>
               </li>
               <li>
-                <img src="" alt="Flask logo" class="tech-item">
+                <img src="" alt="Flask technology logo" class="tech-item" aria-label="Flask">
                 <span>Flask</span>
               </li>
             </ul>
@@ -147,11 +147,11 @@
             <h4>Database/Tools</h4>
             <ul>
               <li>
-                <img src="" alt="PostgreSQL logo" class="tech-item">
+                <img src="" alt="pSQL technology logo" class="tech-item" aria-label="PostgresSQL">
                 <span>PostgresSQL</span>
               </li>
               <li>
-                <img src="" alt="Prisma ORM logo" class="tech-item">
+                <img src="" alt="prisma technology logo" class="tech-item" aria-label="Prisma ORM">
                 <span>Prisma ORM</span>
               </li>
             </ul>
@@ -163,23 +163,23 @@
           <h3>Miscellaneous</h3>
           <ul>
             <li>
-              <img src="" alt="Vite logo" class="tech-item">
+              <img src="" alt="Vite technology logo" class="tech-item" aria-label="ViteJS">
               <span>Vite</span>
             </li>
             <li>
-              <img src="" alt="Webpack logo" class="tech-item">
+              <img src="" alt="Webpack technology logo" class="tech-item" aria-label="Webpack">
               <span>Webpack</span>
             </li>
             <li>
-              <img src="" alt="GitHub logo" class="tech-item">
+              <img src="" alt="GitHub technology logo" class="tech-item" aria-label="Github">
               <span>GitHub</span>
             </li>
             <li>
-              <img src="" alt="Three.js logo" class="tech-item">
+              <img src="" alt="Three js technology logo" class="tech-item" aria-label="ThreeJS">
               <span>Three.js</span>
             </li>
             <li>
-              <img src="" alt="WebGL logo" class="tech-item">
+              <img src="" alt="WebGL technology logo" class="tech-item" aria-label="WebGL">
               <span>GLSL</span>
             </li>
           </ul>
@@ -191,11 +191,12 @@
       <!-- Projects -->
       <section class="section projects">
         <h2>PROJECTS</h2>
-        <ul class="projects-list">
           <!-- Project Item 1 -->
-          <li class="projects-list-item">
-            <img src="" alt="Portfolio Thumbnail" class="thumbnail">
-            <h3 class="project-title">This Portfolio</h3>
+          <article class="projects-list-item">
+            <figure>
+              <img src="" alt="Portfolio Thumbnail" loading="lazy">
+              <figcaption>This Portfolio</figcaption>
+            </figure>
             <p class="project-description">
               This portfolio is a showcase of projects that I've been working on. 
               I chose to build this using vanilla JavaScript, HTML and CSS instead of using a library like React. 
@@ -203,70 +204,74 @@
               This is a very cool library that can seriously kick a front-end up to the next notch, and I wanted the chance to practice some techniques I've learned in a course called<a href="https://threejs-journey.com/"> Three JS Journey</a>.
               I've documented some more of the technical stuff in the Source Code's ReadME.md. Click on the GH icon below to check it out.
             </p>
-            <ul class="tech-stack" class="tech-item">
+            <ul class="tech-stack" class="tech-item" aria-label="">
               <li>                
-                  <img src="" alt="HTML icon" class="tech-item">
+                  <img src="" alt="HTML5 technology logo" class="tech-item" aria-label="HTML5">
                   <span>html </span>
               </li>
               <li>
-                <img src="" alt="CSS icon" class="tech-item">
+                <img src="" alt="CSS3 technology logo" class="tech-item" aria-label="CSS3">
                 <span>CSS</span>
               </div>
               </li>
               <li>                
-                  <img src="" alt="JavaScript icon" class="tech-item">
+                  <img src="" alt="JavaScript technology logo" class="tech-item" aria-label="JS">
                   <span>JavaScript</span>                
               </li>
               <li>                
-                  <img src="" alt="Three js" class="tech-item">
+                  <img src="" alt="Three js technology logo" class="tech-item" aria-label="ThreeJS">
                   <span>Three JS</span>                
               </li>
               <li>                
-                  <img src="" alt="Vite icon" class="tech-item">
+                  <img src="" alt="Vite technology logo" class="tech-item" aria-label="ViteJS">
                   <span>Vite</span>               
               </li>
             </ul>
-          </li>
+          </article>
       
           <!-- Project Item 2 -->
-          <li class="projects-list-item">
-            <img src="" alt="Messenger Thumbnail" class="thumbnail">
-            <h3 class="project-title">Messenger</h3>
+          <article class="projects-list-item">
+            <figure>
+              <img src="" alt="Messenger Thumbnail" loading="lazy">
+              <figcaption>Messenger</figcaption>
+            </figure>
             <p class="project-description">
               This project is in early development. Check out the ReadME in the source code to see what I've done so far!              
             </p>
             <ul class="tech-stack">
               <li>               
-                <img src="" alt="React icon" class="tech-item">
+                <img src="" alt="React technology logo" class="tech-item" aria-label="React">
                 <span>React</span>                
               </li>
               <li>
-                <img src="" alt="Javascript icon" class="tech-item">
+                <img src="" alt="Javascript technology logo" class="tech-item" aria-label="JS">
                 <span>JavaScript</span>
               </li>
               <li>                
-                <img src="" alt="Express icon" class="tech-item">
+                <img src="" alt="Express technology logo" class="tech-item" aria-label="Express">
                 <span>Express</span>                
               </li>
               <li>
-                <img src="" alt="pSQL icon" class="tech-item">
+                <img src="" alt="pSQL technology logo" class="tech-item" aria-label="PostgresSQL">
                 <span>pgSQL</span>
               </li>
               <li>
-                <img src="" alt="prisma icon" class="tech-item">
+                <img src="" alt="prisma technology logo" class="tech-item" aria-label="Prisma ORM">
                 <span>Prisma</span>
               </li>
               <li>                
-                <img src="" alt="Vite icon" class="tech-item">
+                <img src="" alt="Vite technology logo" class="tech-item" aria-label="ViteJS">
                 <span>Vite</span>               
               </li>
             </ul>
-          </li>
+          </article>
       
           <!-- Project Item 3 -->
-          <li class="projects-list-item">
-            <img src="" alt="PE Thumbnail" class="thumbnail">
-            <h3 class="project-title">Photo Exhibit App</h3>
+          <article class="projects-list-item">
+            <figure>
+              <img src="" alt="Photo Exhibitor Thumbnail" loading="lazy">
+              <figcaption>Photo Exhibit App</figcaption>
+            </figure>
             <p class="project-description">
               The idea behind this project was inspired by a three JS demo that I found on codrops **insert link here**. 
               I wanted to practice with REST API server structuring, as well as Three JS. 
@@ -276,37 +281,39 @@
             </p>
             <ul class="tech-stack">              
               <li>                
-                  <img src="" alt="React icon" class="tech-item">
+                  <img src="" alt="React technology logo" class="tech-item" aria-label="React">
                   <span>React</span>
                 
               </li>
               <li>               
-                  <img src="" alt="Three icon" class="tech-item">
+                  <img src="" alt="Three js technology logo" class="tech-item" aria-label="ThreeJS">
                   <span>Three JS</span>             
               </li>
               <li>               
-                  <img src="" alt="Express icon" class="tech-item">
+                  <img src="" alt="Express technology logo" class="tech-item" aria-label="Express">
                   <span>Express</span>              
               </li>
               <li>
-                <img src="" alt="pSQL icon" class="tech-item">
+                <img src="" alt="pSQL technology logo" class="tech-item" aria-label="PostgresSQL">
                 <span>pgSQL</span>
               </li>
               <li>
-                <img src="" alt="prisma icon" class="tech-item">
+                <img src="" alt="prisma technology logo" class="tech-item" aria-label="Prisma ORM">
                 <span>Prisma</span>
               </li>
               <li>               
-                  <img src="" alt="Vite icon" class="tech-item">
+                  <img src="" alt="Vite technology logo" class="tech-item" aria-label="ViteJS">
                   <span>Vite</span>             
               </li>
             </ul>
-          </li>
+          </article>
       
           <!-- Project Item 4 -->
-          <li class="projects-list-item">
-            <img src="" alt="Blog Thumbnail" class="thumbnail">
-            <h3 class="project-title">Blog API</h3>
+          <article class="projects-list-item">
+            <figure>
+              <img src="" alt="Blog Thumbnail" loading="lazy">
+              <figcaption>Blog API</figcaption>
+            </figure>
             <p class="project-description">
               This was the first full-stack app that I ever made. 
               This is your classic User, Post and Comment schema setup. 
@@ -316,28 +323,27 @@
             </p>
             <ul class="tech-stack">
               <li>               
-                  <img src="" alt="React icon" class="tech-item">
+                  <img src="" alt="React technology logo" class="tech-item" aria-label="React">
                   <span>React</span>               
               </li>
               <li>                
-                  <img src="" alt="Express icon" class="tech-item">
+                  <img src="" alt="Express technology logo" class="tech-item" aria-label="Express">
                   <span>Express</span>               
               </li>
               <li>
-                <img src="" alt="pSQL icon" class="tech-item">
+                <img src="" alt="pSQL technology logo" class="tech-item" aria-label="PostgresSQL">
                 <span>pgSQL</span>
               </li>
               <li>
-                <img src="" alt="prisma icon" class="tech-item">
+                <img src="" alt="prisma technology logo" class="tech-item" aria-label="Prisma ORM">
                 <span>Prisma</span>
               </li>
               <li>               
-                  <img src="" alt="Vite icon" class="tech-item">
+                  <img src="" alt="Vite technology logo" class="tech-item" aria-label="ViteJS">
                   <span>Vite</span>         
               </li>
             </ul>
-          </li>
-        </ul>
+          </article>
       </section>
       
       <!-- Contact Me -->
@@ -347,13 +353,13 @@
     </main>
 
     <!-- Footer -->
-    <!-- Sidebar, includes GH icon, email, linkedIn-->
+    <!-- Sidebar, includes GH technology logo, email, linkedIn-->
     <footer>
-      <div>
+     <nav>
         <a href="https://github.com/Raamtaro">GitHub</a>
         <a href="https://linkedin.com/in/rsanghani">LinkedIn</a>
         <p>Email: raam.sanghani@gmail.com</p>
-      </div>
+      </nav>
     </footer>
 
     
