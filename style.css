@@ -31,7 +31,23 @@ body {
   /* display: flex; */
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
+  display: flex;
+  justify-content: flex-end;
+
+  padding: .5rem;
+}
+
+.section > .title {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 h1 {
@@ -63,4 +79,13 @@ h4 {
 ul {
   list-style-type: none;
   text-indent: 0;
+}
+
+.tech-item {
+  width: 30px;
+  height: auto;
+}
+
+.intro {
+  display: inline-flex;
 }
