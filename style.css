@@ -1,8 +1,18 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* font-family: 'IBM Plex Sans', system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  /* font-family: 'Work Sans', system-ui, Avenir, Helvetica, Arial, sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
 
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   line-height: 1.5;
   font-weight: 175;
@@ -10,15 +20,10 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  font-weight: 500;
+  font-weight:175;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -28,10 +33,10 @@ a:hover {
 
 body {
   margin: 0;
-  /* display: flex; */
+  
   place-items: center;
   min-width: 320px;
-  /* min-height: 100vh; */
+  
 }
 
 header {
@@ -39,10 +44,15 @@ header {
   position: sticky;
   top: 0;
   
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end; */
 
   padding: .5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 .section > .title {
@@ -50,24 +60,13 @@ header {
   position: sticky;
 }
 
-h1 {
-  font-size: 5rem;
-  font-weight: 100;
+h1, h2, h3, h4 {
+  font-weight: 600;
 }
 
-h3 {
-  font-weight: 150;
+p {
+  margin-bottom: 1em;
 }
-
-h2 {
-  font-weight: 300;
-}
-
-h4 {
-  font-weight: 100;
-}
-
-
 
 .home {
   max-width: 1280px;
@@ -86,6 +85,12 @@ ul {
   height: auto;
 }
 
-.intro {
+.intro-flex-group{
   display: inline-flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro-description {
+  display: flex;
 }
