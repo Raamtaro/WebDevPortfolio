@@ -49,14 +49,14 @@
       </section>
       <!-- Intro/Employment history(?) -->
       <section class="section intro">
-        <h2 class="title">ABOUT ME</h2>
+        <!-- <h2 class="title">ABOUT ME</h2> -->
         <div class="intro-flex-group">
           <section class="intro-item intro-description">
             <div class="intro-text-group">
               <p>Welcome to my portfolio! I'm a full-stack web developer with a background in Aerospace Engineering. I'm here to help you turn your ideas into reality through readable, modular and SOLID code. </p>
               <p>I also like yoga, music and sushi.</p>
             </div>
-            <img src="" alt="Raam's profile picture" class="profile-picture">
+            <img src="./assets/about_me/bio.jpeg" alt="Raam's profile picture" class="profile-picture">
 
           </section>
           <section class="intro-item work-experience">
@@ -67,29 +67,28 @@
                   <span class="company">Intercom</span>
                   <span class="title">Customer Support Engineer</span>
                 </div>
-                <img class="company-logo" src="" alt="Intercom technology Logo">
+                <img class="company-logo" src="./assets/company_logos/intercom.svg" alt="Intercom technology Logo">
               </li>
               <li>
                 <div class="intro-list-text">
                   <span class="company">Intelsat</span>
                   <span class="title">Satellite Engineer</span>
                 </div>
-                <img class="company-logo" src="" alt="Intelsat-Logo">
+                <img class="company-logo" src="./assets/company_logos/Intelsat_logo.svg" alt="Intelsat-Logo">
               </li>
               <li>
                 <div class="intro-list-text">
-                  <span class="company">Aerotek, NASA GSFC</span>
+                  <span class="company">Aerotek - NASA GSFC</span>
                   <span class="title">Integration and Test Engineer</span>
                 </div>
-                <img class="company-logo" src="" alt="Aerotek-Logo">
-                <img class="company-logo" src="" alt="NASA-Logo">
+                <img class="company-logo" src="./assets/company_logos/nasa.svg" alt="NASA-Logo">
               </li>
               <li>
                 <div class="intro-list-text">
                   <span class="company">Eutelsat Oneweb, fka Oneweb</span>
                   <span class="title">SOP Engineer, Controller</span>
                 </div>
-                <img class="company-logo" src="" alt="OneWeb-Logo">
+                <img class="company-logo" src="./assets/company_logos/oneweb.svg" alt="OneWeb-Logo">
               </li>
             </ul>
             <p>I'll mostly talk about my web dev skills and projects in this portfolio. Take a look at my <a href="https://linkedin.com/in/rsanghani">linkedIn profile</a> for more info about my past employment!</p>
@@ -98,16 +97,12 @@
       </section>
       <!-- Skills -->
       <section class="section skills">
-        <h2 class="title">SKILLS</h2>
-        <div class="skills-description">
-          <p>Check out some of my skills:</p>
-        </div>
-      
+        <!-- <h2 class="title">SKILLS</h2> -->
         <!-- Frontend Skills -->
         <section class="skills-group frontend">
           <h3>Frontend</h3>
           <div class="languages">
-            <h4>Languages</h4>
+            <!-- <h4>Languages</h4> -->
             <ul>
               <li>
                 <img src="/assets/tech_icons/html.svg" alt="HTML5 technology logo" class="tech-item" aria-label="HTML5">
@@ -124,7 +119,7 @@
             </ul>
           </div>
           <div class="frameworks">
-            <h4>Frameworks</h4>
+            <!-- <h4>Frameworks</h4> -->
             <ul>
               <li>
                 <img src="/assets/tech_icons/react.svg" alt="React technology logo" class="tech-item" aria-label="React">
@@ -138,7 +133,7 @@
         <section class="skills-group backend">
           <h3>Backend</h3>
           <div class="languages">
-            <h4>Languages</h4>
+            <!-- <h4>Languages</h4> -->
             <ul>
               <li>
                 <img src="/assets/tech_icons/nodejs.svg" alt="Node.js technology logo" class="tech-item" aria-label="Node.js">
@@ -151,7 +146,7 @@
             </ul>
           </div>
           <div class="frameworks">
-            <h4>Frameworks</h4>
+            <!-- <h4>Frameworks</h4> -->
             <ul>
               <li>
                 <img src="/assets/tech_icons/express.svg" alt="Express technology logo" class="tech-item" aria-label="Express">
@@ -164,7 +159,7 @@
             </ul>
           </div>
           <div class="database-tools">
-            <h4>Database/Tools</h4>
+            <!-- <h4>Database/Tools</h4> -->
             <ul>
               <li>
                 <img src="/assets/tech_icons/psql.svg" alt="pSQL technology logo" class="tech-item" aria-label="PostgresSQL">
@@ -210,7 +205,7 @@
       </section>
       <!-- Projects -->
       <section class="section projects">
-        <h2 class="title">PROJECTS</h2>
+        <!-- <h2 class="title">PROJECTS</h2> -->
           <!-- Project Item 1 -->
           <article class="projects-list-item">
             <figure>
@@ -256,7 +251,10 @@
               <figcaption>Messenger</figcaption>
             </figure>
             <p class="project-description">
-              This project is in early development. Check out the ReadME in the source code to see what I've done so far!              
+              Functionality should include message exchange between users, ideally in real time using websockets.
+              Server for this project built with Express, following the MVC pattern.
+              pSQL and Prisma are being used to manage the many to many relationships between Conversations and Users, as well as the simpler relationships concerning messages and user profiles.
+              Current working objective is integrating socket.io on top of the existing RESTful setup. 
             </p>
             <ul class="tech-stack">
               <li>               
@@ -293,11 +291,10 @@
               <figcaption>Photo Exhibit App</figcaption>
             </figure>
             <p class="project-description">
-              The idea behind this project was inspired by a three JS demo that I found on codrops **insert link here**. 
-              I wanted to practice with REST API server structuring, as well as Three JS. 
-              The goal was to give each user a space to organize separate collections of their photos and lay them out in a view. 
-              From here, some shader and three js 'magic' would kick in and allow them to apply some special effects to their exhibit to give it more of an interactive feel.
-              This project is incredibly dense, and I'll have detailed some more about challenges, requirements and progress in the Repo's description. Check it out!
+              This project provides a platform for users to post their photos, organized in Collections. WebGL effects applied with React Three Fiber and Three JS, making the display more interactive.
+              MVC Pattern in Express and Node JS, integrated with pSQL database and Prisma client.
+              Also follows RESTful design.
+              Authentication, authorization, and file handling capability with Cloudinary.
             </p>
             <ul class="tech-stack">              
               <li>                
@@ -335,11 +332,9 @@
               <figcaption>Blog API</figcaption>
             </figure>
             <p class="project-description">
-              This was the first full-stack app that I ever made. 
-              This is your classic User, Post and Comment schema setup. 
-              I loved building this project as it allowed me a way to really demystify all of the 'cool' stuff about any modern website: authentication, authorization, user data storage, and, most importantly, RESTful API structure.
-              One thing I've come to love about REST APIs is their modularity. 
-              By it's very nature, files are organized from the moment that you build them. This makes code readable, and easy to test. Check out the Repo's ReadME.md for functionality, and features that I'm currently working on.
+              Basic User, Post and Comment schema setup. Follows the MVC and RESTful paradigm.
+              Provides authentication and authorization setup via PassportJS. 
+              Integrated with pSQL via the Prisma ORM.
             </p>
             <ul class="tech-stack">
               <li>               
