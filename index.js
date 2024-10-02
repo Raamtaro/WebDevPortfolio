@@ -1,5 +1,7 @@
 import './style.css'
 import Lenis from 'lenis'
+import Experience from './src/scene/experience/experience.js'
+import sources from './src/sources.js'
 
 const lenis = new Lenis()
 
@@ -13,3 +15,5 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+const sketch = new Experience(sources, document.querySelector('canvas.webgl'))
