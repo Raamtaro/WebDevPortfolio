@@ -1,7 +1,7 @@
 import './style.css'
 import Lenis from 'lenis'
 import Experience from './src/scene/experience/experience.js'
-import sources from './src/sources.js'
+import sources from './src/scene/sources.js'
 
 const lenis = new Lenis()
 
