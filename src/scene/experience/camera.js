@@ -22,7 +22,7 @@ class Camera {
     config () {
         this.sizes.on('resize', this.cameraResizeUpdate.bind(this))
         this.scene.add(this.cameraGroup)
-        this.instance.position.set(4.5, 14, 20)
+        this.instance.position.set(0, 30, 30)
         this.instance.lookAt(0, 0, 0)
         this.cameraGroup.add(this.instance)
     }

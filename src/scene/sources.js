@@ -2,6 +2,6 @@ export default [
     {
         name: 'scholarModel',
         type: 'gltfModel',
-        path: '/scholarModel.glb'
+        path: '/joinedShrunkFace.glb'
     }
 ]
