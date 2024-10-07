@@ -16,4 +16,4 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-const sketch = new Experience(sources, document.querySelector('canvas.webgl'))
+// const sketch = new Experience(sources, document.querySelector('canvas.webgl'))
