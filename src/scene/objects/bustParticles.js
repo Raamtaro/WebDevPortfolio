@@ -46,7 +46,7 @@ class BustParticles {
         }
 
         this.uniforms = {
-            uSize: new THREE.Uniform(0.028),
+            uSize: new THREE.Uniform(0.01675),
             uResolution: new THREE.Uniform(new THREE.Vector2(this.sizes.width * this.sizes.pixelRatio, this.sizes.height * this.sizes.pixelRatio)),
             uParticlesTexture: new THREE.Uniform(),
             uMouse: new THREE.Uniform(new THREE.Vector2()),
@@ -92,7 +92,7 @@ class BustParticles {
     setupPoints() {
         this.bufferGeometry.setDrawRange(0, this.count)
         this.bufferGeometry.setAttribute('aParticlesUv', new THREE.BufferAttribute(this.particlesUvArray, 2))
-        this.bufferGeometry.setAttribute('aColor', this.geometry.attributes.color)
+        this.bufferGeometry.setAttribute('aColor', this.geometry.attributes._vertexcolor)
         this.bufferGeometry.setAttribute('aSize', new THREE.BufferAttribute(this.sizesArray, 1))
 
         // this.bufferGeometry.lookAt(this.experience.camera.cameraGroup)

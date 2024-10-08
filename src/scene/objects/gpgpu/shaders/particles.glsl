@@ -190,8 +190,8 @@ void main() {
 
         //Mix(es) of Curl Noise + simplex Noise
         vec3 simplexFlowField = vec3(
-            simplexNoise4d(vec4(particle.xyz * uFlowFieldFrequency + uVelocity*10.0 + 0.0, time)),
-            simplexNoise4d(vec4(particle.xyz * uFlowFieldFrequency + uVelocity*10.0 + (1.0 + uVelocity), time)),
+            simplexNoise4d(vec4(particle.xyz * uFlowFieldFrequency + uVelocity*5.0 + 0.0, time)),
+            simplexNoise4d(vec4(particle.xyz * uFlowFieldFrequency + uVelocity*5.0 + (1.0 + uVelocity), time)),
             simplexNoise4d(vec4(particle.xyz * uFlowFieldFrequency  +  2.0, time))
         );
         
@@ -208,7 +208,7 @@ void main() {
         // repulsionDirection = normalize(repulsionDirection);
         flowField = normalize(flowField);
         
-        particle.xyz += flowField * uDeltaTime * strength * ((uFlowFieldStrength * uFlowFieldStrength + uVelocity * 0.05 * distFromParticle)/uFlowFieldStrength);
+        particle.xyz += flowField * uDeltaTime * strength * ((uFlowFieldStrength * uFlowFieldStrength + uVelocity * 0.02 * distFromParticle)/uFlowFieldStrength);
         // particle.xyz += uVelocity;
         
         

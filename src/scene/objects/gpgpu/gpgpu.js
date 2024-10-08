@@ -49,7 +49,7 @@ class GpgpuComputation {
         )
 
         this.scene.add(this.debug)
-        // this.debug.visible = false
+        this.debug.visible = false
         this.time.on('tick', this.update.bind(this))
 
     }
@@ -75,9 +75,9 @@ class GpgpuComputation {
         this.particlesVariable.material.uniforms.uTime = new THREE.Uniform(0)
         this.particlesVariable.material.uniforms.uDeltaTime = new THREE.Uniform(0)
         this.particlesVariable.material.uniforms.uBase = new THREE.Uniform(this.baseParticlesTexture)
-        this.particlesVariable.material.uniforms.uFlowFieldInfluence = new THREE.Uniform(0.492)
-        this.particlesVariable.material.uniforms.uFlowFieldStrength = new THREE.Uniform(0.843)
-        this.particlesVariable.material.uniforms.uFlowFieldFrequency = new THREE.Uniform(0.677)
+        this.particlesVariable.material.uniforms.uFlowFieldInfluence = new THREE.Uniform(0.732)
+        this.particlesVariable.material.uniforms.uFlowFieldStrength = new THREE.Uniform(0.665)
+        this.particlesVariable.material.uniforms.uFlowFieldFrequency = new THREE.Uniform(0.757)
         this.particlesVariable.material.uniforms.uVelocity = new THREE.Uniform(0.0)
         this.particlesVariable.material.uniforms.uMouse = new THREE.Uniform(new THREE.Vector2(-10.0, 10.0))
 

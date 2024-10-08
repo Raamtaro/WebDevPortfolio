@@ -9,6 +9,8 @@ class BustModel {
         this.resources = this.experience.resources
         this.resource = this.resources.items.scholarModel
 
+        
+
         this.setInstance()
     }
 
@@ -17,6 +19,8 @@ class BustModel {
             (child) => {
                 if (child.isMesh) {
                     this.instance = child.geometry
+                    child.scale.set(0.5, 0.5, 0.5)
+                    
                     // console.log(this.instance)
                     return
                 }
